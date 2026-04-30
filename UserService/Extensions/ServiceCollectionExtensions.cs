@@ -1,7 +1,7 @@
 ﻿using Cliente.Application.Handlers.Cliente;
 using FluentValidation;
 
-namespace Client.API.Extensions;
+namespace UserService.Extensions;
 
 /// <summary>
 /// Provides extension methods for configuring services in the application.

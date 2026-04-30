@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace Client.API.Extensions.SwaggerConfigurations;
+namespace UserService.Extensions.SwaggerConfigurations;
 
 /// <summary>
 /// Classe responsável pela configuração do Swagger na aplicação.

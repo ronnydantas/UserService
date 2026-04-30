@@ -1,7 +1,7 @@
 ﻿using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace Client.API.Extensions.SwaggerConfigurations;
+namespace UserService.Extensions.SwaggerConfigurations;
 
 /// <summary>
 /// Filtro do Swagger responsável por remover o parâmetro "api-version" da documentação das operações da API.
