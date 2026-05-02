@@ -18,6 +18,8 @@ public static class AddRepositorySetup
         });
         services.AddScoped<IBaseRepository<ClienteCompleto>, BaseRepository<ClienteCompleto>>();
 
+        services.AddScoped<IClienteRepository, ClienteRepository>();
+
         return services;
     }
 }
