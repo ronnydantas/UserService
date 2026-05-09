@@ -8,7 +8,10 @@
 
   <ItemGroup>
     <Folder Include="Services\" />
-    <Folder Include="UseCases\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="14.1.0" />
   </ItemGroup>
 
 </Project>

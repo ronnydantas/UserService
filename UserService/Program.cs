@@ -1,7 +1,8 @@
 using Domain.Entities;
+using Domain.UseCases.CreatePerson;
+using Infrascture;
 using UserService.Extensions;
 using UserService.Extensions.SwaggerConfigurations;
-using Infrascture;
 
 /// <summary>
 /// Classe principal do aplicativo Cliente API.
@@ -22,6 +23,9 @@ public class Program
             .AddControllers();
 
         builder.Services.AddCustomCors();
+
+        builder.Services.AddRepository(builder.Configuration);
+        builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(AtualizarClienteUseCase).Assembly));
 
         builder.Services.AddRepository(builder.Configuration);
 

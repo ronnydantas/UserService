@@ -10,7 +10,7 @@ public class ClienteRepository : BaseRepository<ClienteCompleto>, IClienteReposi
     public ClienteRepository(ClientContext context) : base(context)
     {
     }
-    public async Task<ClienteCompleto?> ConsultarPorId(int id)
+    public async Task<ClienteCompleto?> ConsultarPorId(string id)
     {
         return await _context.Clientes.FindAsync(id);
     }
