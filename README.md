@@ -29,9 +29,9 @@ user.queue
 📦 Estrutura da mensagem consumida
 {
   "id": "guid",
-  "name": "rafael",
-  "fullName": "Rafael Oliveira",
-  "email": "rafael@email.com"
+  "name": "ronny",
+  "fullName": "Ronny Dantas",
+  "email": "ronny@email.com"
 }
 ⚙️ BackgroundService
 
