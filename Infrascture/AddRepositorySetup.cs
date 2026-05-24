@@ -2,6 +2,7 @@
 using Domain.Interfaces.Repositories;
 using Infrascture.Contexts;
 using Infrascture.Repositories;
+using Infrastructure.Kafka;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,6 +20,7 @@ public static class AddRepositorySetup
         services.AddScoped<IBaseRepository<ClienteCompleto>, BaseRepository<ClienteCompleto>>();
 
         services.AddScoped<IClienteRepository, ClienteRepository>();
+        services.AddHostedService<UserCreatedConsumer>();
 
         return services;
     }

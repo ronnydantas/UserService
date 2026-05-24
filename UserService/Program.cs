@@ -29,10 +29,11 @@ public class Program
 
         builder.Services.AddRepository(builder.Configuration);
 
-        builder.Services.Configure<RabbitMqSettings>(
-            builder.Configuration.GetSection("RabbitMQ"));
+        builder.Services.Configure<KafkaSettings>(builder.Configuration.GetSection("Kafka"));
 
-        builder.Services.AddHostedService<RabbitMqBackgroundService>();
+        //builder.Services.Configure<RabbitMqSettings>(builder.Configuration.GetSection("RabbitMQ"));
+
+        //builder.Services.AddHostedService<RabbitMqBackgroundService>();
 
         var app = builder.Build();
 

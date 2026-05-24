@@ -30,7 +30,7 @@ public class ClienteRepository : BaseRepository<ClienteCompleto>, IClienteReposi
 
         var cliente = new ClienteCompleto
         {
-            Id = clienteConsumer.Id,
+            Id = clienteConsumer.Id.ToString(),
             Name = clienteConsumer.UserName,
             FullName = clienteConsumer.FullName,
             Email = clienteConsumer.Email,

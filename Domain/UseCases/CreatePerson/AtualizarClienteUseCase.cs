@@ -1,5 +1,4 @@
-﻿using Domain.Entities;
-using Domain.Interfaces.Repositories;
+﻿using Domain.Interfaces.Repositories;
 using Domain.Shareds;
 using Domain.UseCases.CreatePerson.Command;
 using Domain.ViewModels;
